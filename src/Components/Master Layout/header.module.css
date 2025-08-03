@@ -18,16 +18,20 @@
     flex-wrap: wrap;
 }
 
-.navigation a {
-    text-decoration: none;
+/* Replacing anchor with button */
+.navigation button {
+    background: none;
+    border: none;
     font-weight: 500;
     font-size: 1rem;
     cursor: pointer;
     transition: color 0.3s ease, transform 0.2s ease;
+    padding: 4px 8px;
 }
 
-.navigation a:hover {
+.navigation button:hover {
     transform: translateY(-2px);
+    text-decoration: underline;
 }
 
 .navigation select {
@@ -57,7 +61,7 @@
     color: #222;
 }
 
-.light .navigation a {
+.light .navigation button {
     color: #333;
 }
 
@@ -94,7 +98,7 @@
     margin: 0;
 }
 
-.dark .navigation a {
+.dark .navigation button {
     color: #dddddd;
 }
 
@@ -127,7 +131,7 @@
     margin-right: 20px;
 }
 
-.colorful .navigation a {
+.colorful .navigation button {
     color: #ffffff;
 }
 
@@ -185,7 +189,7 @@
         font-size: 1.4rem;
     }
 
-    .navigation a {
+    .navigation button {
         font-size: 0.95rem;
     }
 

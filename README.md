@@ -42,6 +42,6 @@ Welcome to the **Theme Switcher App** — a simple React project that lets you s
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/theme-switcher-app.git
+   git clone https://github.com/Lalit-Pal/theme-switcher-app.git
    cd theme-switcher-app
    ```

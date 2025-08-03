@@ -1,0 +1,313 @@
+/* ───────────────────────────── */
+/* Base Layout & Typography */
+/* ───────────────────────────── */
+.introSection {
+    text-align: center;
+    margin: 80px auto 40px;
+    max-width: 800px;
+    padding: 0 1rem;
+    transition: all 0.3s ease;
+}
+
+.heading {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 1rem 0 1.5rem;
+    line-height: 1.6;
+}
+
+.knowMoreBtn {
+    background-color: #1976d2;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.knowMoreBtn:hover {
+    background-color: #1257aa;
+}
+
+.loadingText {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #999;
+    margin-top: 1rem;
+}
+
+/* ───────────────────────────── */
+/* Category Grid */
+/* ───────────────────────────── */
+.categoryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+    margin: 30px 10%;
+}
+
+.categoryBtn {
+    padding: 10px 0;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.95rem;
+    text-transform: capitalize;
+}
+
+.categoryBtn:hover {
+    background-color: #ddd;
+}
+
+/* ───────────────────────────── */
+/* Product Grid (default) */
+/* ───────────────────────────── */
+.productGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 40px 10%;
+}
+
+.productCard {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.productCard:hover {
+    transform: translateY(-5px);
+}
+
+.productImage {
+    width: 100%;
+    max-width: 220px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.productTitle {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #222;
+}
+
+/* ───────────────────────────── */
+/* 🌐 Responsive Adjustments */
+/* ───────────────────────────── */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .categoryGrid {
+        margin: 20px 5%;
+        gap: 10px;
+    }
+
+    .productGrid {
+        margin: 20px 5%;
+        gap: 20px;
+    }
+
+    .knowMoreBtn {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .productCard {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 1.7rem;
+    }
+
+    .description {
+        font-size: 0.95rem;
+    }
+
+    .productImage {
+        max-width: 180px;
+    }
+
+    .productTitle {
+        font-size: 0.95rem;
+    }
+
+    .categoryBtn {
+        font-size: 0.85rem;
+        padding: 8px 0;
+    }
+}
+
+/* ───────────────────────────── */
+/* 🌞 Light Theme Variants */
+/* ───────────────────────────── */
+.light .introSection {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.light .heading {
+    font-size: 2.4rem;
+    color: #222;
+}
+
+.light .description {
+    color: #555;
+}
+
+.light .categoryGrid {
+    gap: 12px;
+}
+
+.light .productGrid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin: 40px 10%;
+}
+
+.light .productCard {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.light .productTitle {
+    color: #222;
+}
+
+/* ───────────────────────────── */
+/* 🌚 Dark Theme Variants */
+/* ───────────────────────────── */
+.dark .introSection {
+    background-color: #121212;
+    text-align: left;
+    padding: 30px 16px;
+}
+
+.dark .heading {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.dark .description {
+    font-size: 1rem;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+.dark .categoryGrid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.dark .categoryBtn {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.dark .categoryBtn:hover {
+    background-color: #333;
+}
+
+.dark .productGrid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.dark .productCard {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    padding: 15px;
+    color: #fff;
+}
+
+.dark .productTitle {
+    color: #fff;
+}
+
+/* ───────────────────────────── */
+/* 🌈 Colorful Theme Variants */
+/* ───────────────────────────── */
+.colorful .introSection {
+    background-color: #fff0f5;
+    text-align: center;
+    padding: 60px 30px;
+}
+
+.colorful .heading {
+    font-size: 2.6rem;
+    color: #c2185b;
+}
+
+.colorful .description {
+    font-size: 1.2rem;
+    color: #880e4f;
+}
+
+.colorful .categoryGrid {
+    gap: 16px;
+}
+
+.colorful .categoryBtn {
+    background-color: #ffc0cb;
+    color: #800040;
+    border: 1px solid #e91e63;
+}
+
+.colorful .categoryBtn:hover {
+    background-color: #f48fb1;
+}
+
+.colorful .productGrid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px 30px;
+    margin: 60px 5%;
+    justify-items: center;
+}
+
+.colorful .productCard {
+    background-color: #ffe6f0;
+    border: 2px dashed #f06292;
+    border-radius: 24px;
+    padding: 30px;
+    color: #800040;
+    box-shadow: 0 8px 20px rgba(255, 64, 129, 0.3);
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.colorful .productCard:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 24px rgba(255, 64, 129, 0.4);
+}
+
+.colorful .productTitle {
+    color: #880e4f;
+}

@@ -1,0 +1,195 @@
+/* Base header styles */
+.headerContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navigation a:hover {
+    transform: translateY(-2px);
+}
+
+.navigation select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+/* ──────────────── */
+/* 🌞 Light Theme */
+/* ──────────────── */
+.light {
+    background-color: #f2f2f2;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 24px;
+    flex-wrap: wrap;
+}
+
+.light h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #222;
+}
+
+.light .navigation a {
+    color: #333;
+}
+
+.light select {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #aaa;
+    margin-right: 1rem;
+}
+
+/* ──────────────── */
+/* 🌚 Dark Theme */
+/* ──────────────── */
+.dark {
+    background-color: #121212;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    width: 18%;
+    padding: 40px 16px;
+}
+
+.dark h1 {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.dark .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 0;
+}
+
+.dark .navigation a {
+    color: #dddddd;
+}
+
+.dark select {
+    background-color: #222;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+/* ───────────────── */
+/* 🌈 Colorful Theme */
+/* ───────────────── */
+.colorful {
+    background-color: #ff4081;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.colorful h1 {
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+.colorful .navigation {
+    gap: 16px;
+    margin-right: 20px;
+}
+
+.colorful .navigation a {
+    color: #ffffff;
+}
+
+.colorful select {
+    background-color: #ffffff;
+    color: #c2185b;
+    border: 1px solid #c2185b;
+    margin-right: 1rem;
+}
+
+.colorful select:hover {
+    border-color: #880e4f;
+}
+
+/* ───────────────────────────── */
+/* 📱 Responsive Styles */
+/* ───────────────────────────── */
+@media (max-width: 768px) {
+    .headerContainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 12px;
+    }
+
+    .light,
+    .colorful {
+        flex-direction: column;
+        align-items: center;
+        padding: 12px;
+    }
+
+    .light h1,
+    .colorful h1 {
+        font-size: 1.6rem;
+        margin: 0 0 12px 0;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin: 0;
+    }
+
+    .navigation select {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .light h1,
+    .dark h1,
+    .colorful h1 {
+        font-size: 1.4rem;
+    }
+
+    .navigation a {
+        font-size: 0.95rem;
+    }
+
+    .navigation select {
+        font-size: 0.9rem;
+    }
+}

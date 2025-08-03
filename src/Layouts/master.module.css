@@ -1,0 +1,25 @@
+.light {
+    transition: all 0.8s ease;
+    padding-top: 80px;
+}
+
+.light * {
+    transition: all 0.8s ease;
+    font-family: "Lato", sans-serif;
+}
+
+.dark {
+    transition: all 0.8s ease;
+    margin-left: 16%;
+}
+
+.dark * {
+    transition: all 0.8s ease;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+}
+
+.colorful * {
+    transition: all 0.8s ease;
+    font-family: "Pacifico", cursive;
+}

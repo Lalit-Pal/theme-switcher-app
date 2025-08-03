@@ -1,0 +1,165 @@
+.contactContainer {
+    max-width: 700px;
+    margin: 100px auto 40px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* ────────────── */
+/* Base Styling */
+/* ────────────── */
+
+.title {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.input,
+.textarea {
+    margin-top: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: border-color 0.2s ease;
+    color: #000;
+}
+
+.input:focus,
+.textarea:focus {
+    border-color: #1976d2;
+    outline: none;
+}
+
+.button {
+    padding: 12px 16px;
+    font-size: 1rem;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #155ab6;
+}
+
+/* ─────────────────────── */
+/* Theme Overrides */
+/* ─────────────────────── */
+
+/* 🌞 Light Theme */
+.light .contactContainer {
+    background-color: #f4f4f4;
+}
+
+.light .title,
+.light .description,
+.light label {
+    color: #000;
+}
+
+.light .input,
+.light .textarea {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+.light .button {
+    background-color: #1976d2;
+    color: white;
+}
+
+.light .button:hover {
+    background-color: #1257aa;
+}
+
+/* 🌚 Dark Theme */
+.dark .contactContainer {
+    background-color: #1f1f1f;
+}
+
+.dark .title,
+.dark .description,
+.dark label {
+    color: #ffffff;
+}
+
+.dark .input,
+.dark .textarea {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+.dark .input:focus,
+.dark .textarea:focus {
+    border-color: #90caf9;
+}
+
+.dark .button {
+    background-color: #90caf9;
+    color: #000;
+}
+
+.dark .button:hover {
+    background-color: #64b5f6;
+}
+
+/* 🌈 Colorful Theme */
+.colorful .contactContainer {
+    background-color: #fff0f5;
+    border: 2px solid #ff69b4;
+}
+
+.colorful .title,
+.colorful .description,
+.colorful label {
+    color: #c2185b;
+}
+
+.colorful .input,
+.colorful .textarea {
+    background-color: #ffe6f0;
+    color: #c2185b;
+    border: 1px solid #f06292;
+}
+
+.colorful .input:focus,
+.colorful .textarea:focus {
+    border-color: #ec407a;
+}
+
+.colorful .button {
+    background-color: #ec407a;
+    color: white;
+}
+
+.colorful .button:hover {
+    background-color: #d81b60;
+}

@@ -4,44 +4,38 @@ Welcome to the **Theme Switcher App** — a simple React project that lets you s
 
 ---
 
-## Features
+## 🚀 Live Demo
 
-- Switch between Light, Dark, and Colorful themes using a dropdown.
-- Uses Redux Toolkit to manage the selected theme globally.
-- Each theme has a unique layout, font sizes, spacing, and colors.
-- Built using React Router, CSS Modules, and reusable layout components.
-- Fully responsive design.
-- Smooth transitions when switching themes.
+Try the live version of the app here:  
+👉 [https://lalit-theme-switcher-app.netlify.app](https://lalit-theme-switcher-app.netlify.app)
 
 ---
 
-## Pages
+## ✨ Features
 
-- **Home Page**  
-  Displays a welcome message, a list of product categories (fetched from dummyjson.com), and product cards.
-
-- **About Page**  
-  Describes the purpose and mission of the app, along with a team section.
-
-- **Contact Page**  
-  A basic contact form with fields for name, email, and message.
+- Switch between **Light**, **Dark**, and **Colorful** themes using a dropdown.
+- Each theme changes layout, fonts, spacing, and colors.
+- Theme is managed globally using **Redux Toolkit**.
+- Routing between pages handled using **React Router**.
+- All styling done using **CSS Modules**.
+- Fully **responsive design** with transitions between themes.
 
 ---
 
-## Tech Stack
+## 🧩 Pages
 
-- React
-- Redux Toolkit
-- React Router DOM
-- CSS Modules
-- JavaScript (ES6+)
+- **Home** – Welcome section + product categories and product cards (fetched from `dummyjson.com`)
+- **About** – Basic intro with team info
+- **Contact** – Simple contact form
 
 ---
 
-## Getting Started
+## ⚙️ Setup Instructions
+
+Follow these steps to run the app locally:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Lalit-Pal/theme-switcher-app.git
+   git clone https://github.com/your-username/theme-switcher-app.git
    cd theme-switcher-app
    ```

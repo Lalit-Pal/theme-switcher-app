@@ -14,6 +14,7 @@ const Header = () => {
       <h1>Theme Switcher</h1>
       <div className={styles.navigation}>
         <a
+          href="#"
           onClick={() => {
             navigate("/");
           }}
@@ -21,6 +22,7 @@ const Header = () => {
           Home
         </a>
         <a
+          href="#"
           onClick={() => {
             navigate("/about");
           }}
@@ -28,6 +30,7 @@ const Header = () => {
           About
         </a>
         <a
+          href="#"
           onClick={() => {
             navigate("/contact");
           }}
